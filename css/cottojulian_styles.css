@@ -1,0 +1,844 @@
+@charset "utf-8";
+
+/* =============================================
+	PUBGladiator Layout Styling
+	Author: Julian Cotto
+	Last Updated Date: 07/28/2023
+   =============================================
+*/
+
+/* =============================================
+	PUBGladiator HTML Styling
+   =============================================
+*/
+
+html {
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+/* =============================================
+	PUBGladiator Body Styling
+   =============================================
+*/
+
+body {
+    background-color: #A0ADA1;
+    display: block;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+    text-align: center;
+}
+/* =============================================
+	PUBGladiator Header Styling
+   =============================================
+*/
+
+header {
+    background-color: #D7CAA4;
+    height: 13em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 1em;
+}
+header div#headerWrap {
+    display: flex;
+    background-color: grey;
+    height: 100%;
+    width: 80%;
+    align-items: center;
+    contain: content;
+    margin: 5px;
+    padding: 0;
+    clear: both;
+}
+#logoDiv {
+    background-color: #D7CAA4;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    float: left;
+    padding: 1em;
+    margin: 0;
+}
+
+#logoFig {
+    display: flex;
+    position: relative;
+    float: left;
+    margin: 5px;
+    text-wrap: none;
+}
+#logo {
+    display: block;
+    margin: 0;
+    max-height: 80%;
+}
+#figCaption {
+    display: flex;
+    position: absolute;
+    max-height: 20%;
+    padding-bottom: 5px;
+    margin: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    clear: both;
+}
+#figCaption h1 {
+    text-align: left;
+    display: flex;
+    font-family: "Roboto Light", sans-serif;
+    font-weight: lighter;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: #4E5150;
+    white-space: nowrap;
+    padding-bottom: 5px;
+}
+div#navDiv {
+    background-color: #D7CAA4;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0;
+    padding: 1em;
+}
+#navicon {
+    object-fit: contain;
+    background-color: rgba(71, 81, 80, 0.2);
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+    position: fixed;
+    padding: 10px;
+    margin: auto;
+}
+#navDiv #navList {
+    display: none;
+    background-color: #D7CAA4;
+    height: 100%;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    padding-right: 20px;
+}
+#navItems ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 20px;
+    height: 100%;
+    width: 100%;
+    padding-right: 20px;
+}
+#navItems ul li {
+    font-family: "Roboto Light", sans-serif;
+    font-weight: normal;
+    max-font-size: 5em;
+    letter-spacing: 2px;
+    color: #4E5150;
+    margin: 2em;
+    text-shadow: 0 0 10px #4E5150;
+    list-style-type: none;
+}
+#navicon:hover{
+    scale: 1.1;
+}
+#navicon:hover + #navDiv:hover {
+    display: none;
+}
+#navDiv:hover #navList {
+    display: flex;
+}
+a:link {
+    text-decoration: none;
+    color: #4E5150;
+}
+
+/* =============================================
+	PUBGladiator "Contained Body" Styling
+   =============================================
+*/
+#wrapperDiv {
+    background-color: #A0ADA1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 80%;
+    margin: auto;
+    padding: 15px;
+    overflow: hidden;
+}
+#upperDiv {
+    background-color: #A0ADA1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 40%;
+    width: 100%;
+    clear: bottom;
+    padding-bottom: 2em;
+}
+.fastLinks {
+    background-color: #A0ADA1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 25%;
+    object-fit: contain;
+}
+#lowerDiv {
+    object-fit: contain;
+    background-color: #A0ADA1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    height: auto;
+    width: 80%;
+    margin-bottom: 50px;
+    padding-top: 25px;
+}
+#submitClips {
+    height: auto;
+    width: 40%;
+    float: left;
+    justify-content: center;
+}
+
+#fVContainer {
+    background-color: #A0ADA1;
+    justify-content: center;
+    object-fit: contain;
+    text-align: center;
+    display: flex;
+    float: right;
+    flex-direction: column;
+    width: 60%;
+    padding-left: 50px;
+    height: auto;
+    margin: auto;
+}
+
+/* =============================================
+	PUBGladiator Footer Styling
+   =============================================
+*/
+footer {
+    background-color: #D7CAA4;
+    height: 5em;
+    width: 100%;
+    padding: 1em;
+    margin: 0;
+}
+footer div#footerDiv {
+    background-color: #D7CAA4;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 80%;
+    margin: 0;
+    padding: 0;
+}
+#footerLogoDiv {
+    display: flex;
+    height: 100%;
+    width: 50%;
+    justify-content: center;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+footer div#footerLogoDiv img {
+    max-width: 100%;
+    max-height: 100%;
+    padding: 1px;
+}
+footer div#contactDiv {
+    display: flex;
+    height: 100%;
+    width: 50%;
+    justify-content: right;
+    align-items: center;
+    float: right;
+    margin: 0;
+    padding: 0;
+}
+
+/* =============================================
+    PUBGladiator LinkOne Styling
+   =============================================
+*/
+#linkOne {
+    display: block;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+}
+#fMLink{
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    box-shadow: 0 0 25px 0 rgba(0,0,0,0.5);
+    clear: both;
+}
+#fMLink:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+#linkOne figcaption {
+    padding-top: 20px;
+    font-family: Lato, sans-serif;
+    text-shadow: 0 3px 10px #000000;
+    font-weight: normal;
+    font-style: italic;
+    font-size: 1.5em;
+    color: #4E5150;
+    text-align: center;
+}
+
+/* =============================================
+    PUBGladiator LinkTwo Styling
+   =============================================
+*/
+#linkTwo {
+    display: block;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+}
+#armoryLink{
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    box-shadow: 0 0 25px 0 rgba(0,0,0,0.5);
+    clear: both;
+}
+#armoryLink:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+#linkTwo figcaption {
+    padding-top: 20px;
+    font-family: Lato, sans-serif;
+    text-shadow: 0 3px 10px #000000;
+    font-weight: normal;
+    font-style: italic;
+    font-size: 1.5em;
+    color: #4E5150;
+    text-align: center;
+}
+
+/* =============================================
+    PUBGladiator LinkThree Styling
+   =============================================
+*/
+#linkThree {
+    display: block;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+}
+#mapsLink {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    box-shadow: 0 0 25px 0 rgba(0,0,0,0.5);
+    clear: both;
+}
+#mapsLink:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+#linkThree figcaption {
+    padding-top: 20px;
+    font-family: Lato, sans-serif;
+    text-shadow: 0 3px 10px #000000;
+    font-weight: normal;
+    font-style: italic;
+    font-size: 1.5em;
+    color: #4E5150;
+    text-align: center;
+}
+
+/* =============================================
+    PUBGladiator LowerDiv Styling
+   =============================================
+*/
+/* =============================================
+    PUBGladiator ButtonContainer Styling
+   =============================================
+*/
+#submitClips {
+    background-color: #A0ADA1;
+    background-image: url("../images/art/button.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0 0 20px 0 #000000;
+}
+#submitClips:hover {
+    scale: 1.1;
+    transition: 0.5s;
+}
+#submitClips h1 {
+    font-family: Lato, sans-serif;
+    font-weight: bold;
+    text-shadow: 0 0 15px #000000;
+    font-size: 25px;
+    color: #D7CAA4;
+    text-align: center;
+    white-space: nowrap;
+}
+#vidContainer {
+    margin: 0;
+    justify-content: right;
+    object-fit: contain;
+}
+#vidContainer video {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-content: center;
+    box-shadow: 0 0 10px #000000;
+}
+#vidText {
+    display: flex;
+    flex-direction: column;
+    float: left;
+    color: #4E5150;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-content: center;
+    text-shadow: 0 0 25px 0 rgba(0,0,0,0.5);
+}
+#vidText h1 {
+    text-shadow: 0 0 10px #000000;
+    display: block;
+    font-family: Lato, sans-serif;
+    font-weight: normal;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+#vidText h2 {
+    text-shadow: 0 0 10px #000000;
+    display: block;
+    font-family: Lato, sans-serif;
+    font-weight: lighter;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+/* =============================================
+    PUBGladiator Maps Styling
+   =============================================
+*/
+#mapsWrapperDiv {
+    object-fit: contain;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 80%;
+    padding: 0;
+    margin: auto;
+}
+#mapsSwapDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    height: auto;
+    width: 90%;
+    margin: auto;
+    padding-top: 2em;
+}
+#mapsSwapDiv button {
+    background-color: #8B91B3;
+    color: #D7CAA4;
+    border-radius: 10px;
+    border-color: #8B91B3;
+    box-shadow: 0 3px 10px #000000;
+    animation: ease-in;
+    width: 10em;
+    height: auto;
+}
+#mapsSwapDiv button:hover {
+    scale: 1.1;
+    transition: 0.5s;
+    background-color: #FCA311;
+}
+#mapsDiv {
+    object-fit: contain;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+#mapsDiv figure {
+    padding-top: 1em;
+    text-align: center;
+    font-family: Lato, sans-serif;
+    font-weight: normal;
+    font-size: 1.5em;
+    font-style: italic;
+    color: #D7CAA4;
+    text-shadow: 5px 0 10px #000000;
+}
+#mapsDiv figcaption {
+    padding: 15px;
+}
+#mapsDiv img {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
+    box-shadow: 0 0 20px #000000;
+}
+/* =============================================
+    PUBGladiator Armory Styling
+   =============================================
+*/
+#armoryWrapperDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 80%;
+    padding: 10px;
+    margin: auto;
+}
+#assaultDiv {
+    text-align: center;
+    height: auto;
+    width: 80%;
+    display: block;
+    justify-content: center;
+    margin: auto;
+    padding: 0;
+}
+#assaultHeader{
+    display: block;
+    justify-content: center;
+    align-content: center;
+    width: 80%;
+    height: auto;
+}
+#tableHeader {
+    display: flex;
+    float: left;
+    height: auto;
+    padding-top: 2em;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#lmgTable {
+    table-layout: fixed;
+    display: block;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2em;
+    margin: auto;
+}
+#lmgTable th {
+    align-content: center;
+    font-family: Lato, sans-serif;
+    font-weight: normal;
+    font-size: 1.5em;
+    font-style: italic;
+    color: #D7CAA4;
+    text-shadow: 5px 0 10px #000000;
+    padding-bottom: 0;
+    margin: 0;
+}
+#lmgTable td {
+    height: 100px;
+}
+.weapons {
+    padding: 0;
+    max-height: 100%;
+    max-width: 100%;
+    margin: auto;
+}
+#lmgTable p:nth-of-type(1){
+    display: none;
+}
+#lmgTable .weapons:hover + p:nth-of-type(1){
+    padding: 5px;
+    scale: 1.2;
+    border-radius: 2em;
+    transition: .5s;
+    display: block;
+    font-family: "Roboto Light", sans-serif;
+    color: #4E5150;
+    font-weight: lighter;
+    text-align: center;
+    text-shadow: 5px 0 10px rgba(0,0,0,0.5);
+}
+#lmgTable th, #lmgTable td {
+    border: 1px solid black;
+    border-radius: 5px;
+    empty-cells: hide;
+}
+#tableHeader h1 {
+    font-family: Lato, sans-serif;
+    font-weight: normal;
+    font-size: 5em;
+    font-style: italic;
+    color: #D7CAA4;
+    text-shadow: 5px 0 10px #000000;
+    margin: 0;
+}
+
+/* =============================================
+    PUBGladiator Field Manual Styling
+   =============================================
+*/
+#fMWrapperDiv {
+    object-fit: contain;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: auto;
+    width: 80%;
+    margin: auto;
+}
+#container {
+    padding: 15px;
+    height: auto;
+    width: 100%;
+}
+#fMWrapperDiv h1 {
+    font-family: Lato, sans-serif;
+    font-weight: normal;
+    font-size: 5em;
+    font-style: italic;
+    color: #D7CAA4;
+    text-shadow: 5px 0 10px #000000;
+    margin: 0;
+    padding-bottom: 5px;
+}
+#fMWrapperDiv h2 {
+    font-family: Lato, sans-serif;
+    font-weight: normal;
+    font-size: 2em;
+    color: #D7CAA4;
+    margin: 0;
+    padding-top: 20px;
+    text-shadow: 5px 0 10px #000000;
+}
+#fMWrapperDiv p {
+    font-family: Lato, sans-serif;
+    font-weight: normal;
+    font-size: 1.5em;
+    color: #000000;
+    margin: 0;
+    padding-bottom: 20px;
+}
+#flank {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    width: 80%;
+    margin: auto;
+    padding: 0;
+}
+/* =============================================
+    PUBGladiator Submit Clips Styling
+   =============================================
+*/
+#clipsWrapperDiv {
+    object-fit: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: auto;
+    width: 80%;
+    margin: auto;
+}
+#guidelines {
+    margin-top: 20px;
+}
+label[for="gamertag"] {
+    font-family: Lato, sans-serif;
+    font-style: italic;
+    color: #D7CAA4;
+    text-shadow: 5px 0 10px #000000;
+    margin: auto;
+}
+input#gamertag {
+    background-color: #8B91B3;
+    border-radius: 25px;
+    box-shadow: 0 0 10px #000000;
+    height: 20px;
+    width: 500px;
+    text-align: center;
+    font-family: "Roboto Light", sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    color: #D7CAA4;
+}
+label[for="platform"] {
+    font-family: Lato, sans-serif;
+    font-weight: normal;
+    font-style: italic;
+    color: #D7CAA4;
+    text-shadow: 5px 0 10px #000000;
+    margin-bottom: 20px;
+    padding-top: 20px;
+}
+select#platform {
+    background-color: #8B91B3;
+    box-shadow: 0 0 10px #000000;
+    border-radius: 25px;
+    height: auto;
+    width: 50%;
+    text-align: center;
+    font-family: "Roboto Light", sans-serif;
+    font-weight: bolder;
+    font-style: italic;
+    color: #D7CAA4;
+}
+label[for="message"] {
+    font-family: Lato, sans-serif;
+    font-style: italic;
+    color: #D7CAA4;
+    text-shadow: 5px 0 10px #000000;
+    padding-bottom: 5px;
+    margin: auto;
+}
+textarea#message {
+    background-color: #8B91B3;
+    box-shadow: 0 0 10px #000000;
+    border-radius: 25px;
+    height: 250px;
+    width: 500px;
+    text-align: center;
+    font-family: "Roboto Light", sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    color: #D7CAA4;
+}
+input[type="submit"] {
+    font-family: Lato, sans-serif;
+    font-weight: bold;
+    color: #D7CAA4;
+    height: 50px;
+    width: auto;
+    text-shadow: 5px 0 10px #000000;
+    background-color: #8B91B3;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+input[type="submit"]:hover {
+    scale: 1.5;
+    transition: 0.5s;
+    background-color: #FCA311;
+}
+/* =============================================
+    PUBGladiator Reference Styling
+   =============================================
+*/
+#linksWrapperDiv {
+    object-fit: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    height: auto;
+    width: 100%;
+    margin: auto;
+    padding: 0;
+}
+#linksWrapperDiv div {
+    object-fit: contain;
+    display: block;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    height: auto;
+    width: 80%;
+    margin: auto;
+    background-image: url("../images/art/Emblem.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+#refLinks ol {
+    list-style-type: none;
+}
+.ref{
+    font-family: Lato, sans-serif;
+    font-weight: normal;
+    font-style: italic;
+    font-size: 3em;
+    color: #D7CAA4;
+    padding-bottom: 5px;
+    text-align: center;
+    text-shadow: 5px 0 10px #000000;
+    background-color: rgba(0,0,0,.5);
+    border-radius: 25px;
+}
+#refLinks li {
+    align-content: center;
+    font-family: Lato, sans-serif;
+    font-weight: normal;
+    font-size: 1.5em;
+    color: #8B91B3;
+    padding: 5px;
+    text-align: center;
+    width: 100%;
+}
+#refLinks li:hover {
+    scale: 1.2;
+    background-color: #8B91B3;
+    border-radius: 25px;
+    transition: .1s;
+    background-position: center;
+}

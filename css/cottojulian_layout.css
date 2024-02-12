@@ -1,0 +1,332 @@
+@charset "utf-8";
+
+/* =============================================
+	PUBGladiator Layout Styling
+	Author: Julian Cotto
+	Last Updated Date: 07/28/2023
+   =============================================
+*/
+
+/* =============================================
+	PUBGladiator HTML Styling
+   =============================================
+*/
+
+html {
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* =============================================
+	PUBGladiator Body Styling
+   =============================================
+*/
+
+body {
+    background-color: white;
+    border: 5px solid black;
+    display: block;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+    text-align: center;
+}
+
+/* =============================================
+	PUBGladiator Header Styling
+   =============================================
+*/
+
+header {
+    background-color: white;
+    border: 5px solid black;
+    height: 10em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 1em;
+}
+header div#headerWrap {
+    display: flex;
+    background-color: white;
+    border: 5px solid black;
+    height: 100%;
+    width: 80%;
+    align-items: center;
+    contain: content;
+    margin: 5px;
+    padding: 0;
+    clear: both;
+}
+#logoDiv {
+    background-color: white;
+    border: 5px solid black;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    float: left;
+    padding: 1em;
+    margin: 0;
+}
+
+#logoFig {
+    background-color: white;
+    border: 5px solid black;
+    display: flex;
+    position: relative;
+    float: left;
+    margin: 5px;
+    text-wrap: none;
+}
+
+#logo {
+    background-color: white;
+    border: 5px solid black;
+    display: block;
+    margin: 0;
+    max-height: 80%;
+}
+
+#figCaption {
+    background-color: white;
+    border: 5px solid black;
+    display: flex;
+    position: absolute;
+    max-height: 20%;
+    padding-bottom: 5px;
+    margin: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    clear: both;
+}
+
+#figCaption h1 {
+    background-color: white;
+    border: 5px solid black;
+    text-align: left;
+    display: flex;
+    font-family: "Roboto Light", sans-serif;
+    font-weight: lighter;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: #4E5150;
+    white-space: nowrap;
+    padding-bottom: 5px;
+}
+div#navDiv {
+    background-color: white;
+    border: 5px solid black;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0;
+    padding: 1em;
+}
+#navDiv #navicon {
+    background-color: white;
+    border: 5px solid black;
+    object-fit: contain;
+    background-color: rgba(71, 81, 80, 0.2);
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+    position: fixed;
+    padding: 15px;
+    margin-right: auto;
+}
+#navDiv #navList {
+    display: none;
+    background-color: white;
+    border: 5px solid black;
+    height: 100%;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-right: 20px;
+}
+#navItems ul {
+    background-color: white;
+    border: 5px solid black;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 20px;
+    height: 100%;
+    width: 100%;
+}
+#navItems ul li {
+    background-color: white;
+    border: 5px solid black;
+    font-family: "Roboto Light", sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: #4E5150;
+    margin: 2em;
+    text-shadow: 0 0 10px #4E5150;
+    list-style-type: none;
+}
+
+
+a:link {
+    background-color: white;
+    border: 5px solid black;
+    text-decoration: none;
+    color: #4E5150;
+}
+
+/* =============================================
+	PUBGladiator "Contained Body" Styling
+   =============================================
+*/
+
+#wrapperDiv {
+    background-color: white;
+    border: 5px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90em;
+    width: 80%;
+    margin: auto;
+    padding: 0;
+    clear: both;
+}
+#upperDiv {
+    background-color: white;
+    border: 5px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 40%;
+    width: 100%;
+    clear: bottom;
+    padding-bottom: 2em;
+}
+#lowerDiv {
+    clear: top;
+    background-color: white;
+    border: 5px solid black;
+    display: block;
+    height: 60%;
+    width: 100%;
+    margin: 1em;
+    padding-top: 5px;
+    padding-bottom: 1em;
+    overflow: hidden;
+}
+.fastLinks {
+    background-color: white;
+    border: 5px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 25%;
+    object-fit: contain;
+}
+#buttonContainer {
+    background-color: white;
+    border: 5px solid black;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+    display: flex;
+    height: 100%;
+    width: 33%;
+    float: left;
+    margin: .5em;
+    padding-left: 4em;
+    padding-bottom: 0;
+}
+#fVContainer {
+    background-color: white;
+    border: 5px solid black;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    float: left;
+ }
+
+/* =============================================
+	PUBGladiator Footer Styling
+   =============================================
+*/
+
+footer {
+    background-color: white;
+    border: 5px solid black;
+    justify-content: center;
+    height: 5em;
+    width: 100%;
+    padding: 1em;
+    margin: auto;
+}
+
+footer div#footerDiv {
+    background-color: white;
+    border: 5px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 80%;
+    margin: auto;
+    padding: 0;
+}
+
+#footerLogoDiv {
+    background-color: white;
+    border: 5px solid black;
+    display: flex;
+    height: 100%;
+    width: 50%;
+    justify-content: left;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+footer div#footerLogoDiv img {
+    background-color: white;
+    border: 5px solid black;
+    max-width: 100%;
+    max-height: 100%;
+    padding: 1px;
+}
+
+footer div#contactDiv {
+    background-color: white;
+    border: 5px solid black;
+    display: flex;
+    height: 100%;
+    width: 50%;
+    justify-content: right;
+    align-items: center;
+    float: right;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
